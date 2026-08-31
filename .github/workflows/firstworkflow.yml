@@ -2,7 +2,6 @@ name: first workflow
 on: ["push", "pull_request"]
 jobs:
   build:
-    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: build step
@@ -10,6 +9,7 @@ jobs:
       - name: hi step  
         run: echo "hi"
   deploy:
+     needs: build
      runs-on: ubuntu-latest
      steps:
        - name: deploy step
