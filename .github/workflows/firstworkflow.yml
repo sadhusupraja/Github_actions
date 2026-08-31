@@ -7,10 +7,12 @@ jobs:
       - name: build step
         run: echo "build job"
       - name: hi step  
-        run: echo "hi"
+        run: echo "hi ${{secrets.my_name}}"
   deploy:
      needs: build
      runs-on: ubuntu-latest
      steps:
        - name: deploy step
          run: echo "deploy job"
+       - name: age
+         run: echo "age ${{vars.my_age}}
