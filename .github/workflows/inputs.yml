@@ -1,6 +1,6 @@
 name: inputs
 on: workflow_dispatch
-inputs:
+ inputs:
   env:
     description: enter the env
     required: true
