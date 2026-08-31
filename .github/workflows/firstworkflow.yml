@@ -9,6 +9,7 @@ jobs:
       - name: hi step  
         run: echo "hi"
   deploy:
+     needs: build
      runs-on: ubuntu-latest
      steps:
        - name: deploy step
