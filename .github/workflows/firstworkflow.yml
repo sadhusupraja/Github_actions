@@ -15,4 +15,4 @@ jobs:
        - name: deploy step
          run: echo "deploy job"
        - name: age
-         run: echo "age ${{vars.my_age}}
+         run: echo "age ${{vars.my_age}}"
