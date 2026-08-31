@@ -1,0 +1,17 @@
+on: push
+inputs:
+  env:
+    description: enter the env
+    required: true
+    type: choice
+    options:
+     -dev
+     -test
+     -prod
+    
+jobs:
+  inputjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using input paramenters
+        run: echo "environment is ${{inputs.env}}
