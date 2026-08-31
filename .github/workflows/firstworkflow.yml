@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: hello step
         run: |
-        echo "hello supraja"
-        echo "hello"
-        echo "hi"
+         echo "hello supraja"
+         echo "hello"
+         echo "hi"
