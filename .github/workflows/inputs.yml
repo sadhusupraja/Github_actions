@@ -1,14 +1,14 @@
 name: inputs
 on: workflow_dispatch
- inputs:
-  env:
-    description: enter the env
-    required: true
-    type: choice
-    options:
-     -dev
-     -test
-     -prod
+  inputs:
+    env:
+      description: enter the env
+      required: true
+      type: choice
+      options:
+        -dev
+        -test
+        -prod
     
 jobs:
   inputjob:
